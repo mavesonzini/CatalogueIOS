@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import Catalogue
+
 class ItemTest: XCTestCase {
     
     override func setUp() {
@@ -20,8 +22,8 @@ class ItemTest: XCTestCase {
         super.tearDown()
     }
     
-    func  testInit_shouldTakeTitle(){
-        Item(title:"Test title")
+    func testInit_shouldTakeTitleAndDescription() {
+        _ = Item(title: "Test title", itemCategory: "test Category")
     }
     
 }
