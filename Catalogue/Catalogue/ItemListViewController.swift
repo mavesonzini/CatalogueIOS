@@ -11,8 +11,9 @@ import UIKit
 class ItemListViewController: UIViewController {
     var tableView: UITableView?
 
+    @IBOutlet weak var itemTableView: UITableView!
+    
     override func viewDidLoad() {
-        tableView = UITableView()
     }
 
 }
