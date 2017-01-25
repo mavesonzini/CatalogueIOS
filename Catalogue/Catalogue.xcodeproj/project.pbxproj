@@ -16,6 +16,7 @@
 		51EEBA061E38BC7A00CF456D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA051E38BC7A00CF456D /* Item.swift */; };
 		51EEBA091E38C58800CF456D /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA081E38C58800CF456D /* ItemListViewControllerTests.swift */; };
 		51EEBA0B1E38C60D00CF456D /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA0A1E38C60D00CF456D /* ItemListViewController.swift */; };
+		51EEBA0E1E38D05500CF456D /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA0D1E38D05500CF456D /* ItemListDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		51EEBA051E38BC7A00CF456D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		51EEBA081E38C58800CF456D /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
 		51EEBA0A1E38C60D00CF456D /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		51EEBA0D1E38D05500CF456D /* ItemListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		51EEBA0C1E38C61400CF456D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				51EEBA0D1E38D05500CF456D /* ItemListDataProvider.swift */,
 				51EEBA0A1E38C60D00CF456D /* ItemListViewController.swift */,
 			);
 			name = Controller;
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EEBA0B1E38C60D00CF456D /* ItemListViewController.swift in Sources */,
+				51EEBA0E1E38D05500CF456D /* ItemListDataProvider.swift in Sources */,
 				51EEBA061E38BC7A00CF456D /* Item.swift in Sources */,
 				51EEB9E41E38BB4900CF456D /* AppDelegate.swift in Sources */,
 			);

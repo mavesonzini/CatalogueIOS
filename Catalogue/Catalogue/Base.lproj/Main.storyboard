@@ -36,10 +36,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dataProvider" destination="nF9-lf-QPk" id="mXZ-nT-7Iv"/>
                         <outlet property="itemTableView" destination="gZe-Ey-gHx" id="t5x-Xa-qcj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaR-s3-aZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="nF9-lf-QPk" customClass="ItemListDataProvider" customModule="Catalogue" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="-31" y="53"/>
         </scene>
