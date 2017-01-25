@@ -23,7 +23,7 @@ class ItemTest: XCTestCase {
     }
     
     func testInit_shouldTakeTitleAndDescription() {
-        _ = Item(title: "Test title", itemCategory: "test Category")
+        _ = Item(title: "Test title", itemCategory: "test Category", itemPrice: 10.00, itemQuantity: 1 )
     }
     
 }
