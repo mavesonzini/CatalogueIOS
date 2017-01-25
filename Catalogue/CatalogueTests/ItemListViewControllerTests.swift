@@ -17,7 +17,6 @@ class ItemListViewControllerTests: XCTestCase {
     override func setUp()
     {
         super.setUp()
-        
     }
     
     override func tearDown()
@@ -57,4 +56,14 @@ class ItemListViewControllerTests: XCTestCase {
         XCTAssertTrue(sut.itemTableView.delegate is ItemListDataProvider)
     }
     
+    func testViewDidLoad_ShouldSetDelegateAndDataSourceToTheSameObject()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
+        
+        _ = sut.view
+        
+        XCTAssertEqual(sut.itemTableView.dataSource as? ItemListDataProvider, sut.itemTableView.delegate as? ItemListDataProvider)
+    }
 }
+
