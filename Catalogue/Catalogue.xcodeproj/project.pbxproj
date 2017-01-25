@@ -17,6 +17,7 @@
 		51EEBA091E38C58800CF456D /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA081E38C58800CF456D /* ItemListViewControllerTests.swift */; };
 		51EEBA0B1E38C60D00CF456D /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA0A1E38C60D00CF456D /* ItemListViewController.swift */; };
 		51EEBA0E1E38D05500CF456D /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA0D1E38D05500CF456D /* ItemListDataProvider.swift */; };
+		51EEBA101E38EB3800CF456D /* ItemListDataProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA0F1E38EB3800CF456D /* ItemListDataProviderTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		51EEBA081E38C58800CF456D /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
 		51EEBA0A1E38C60D00CF456D /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		51EEBA0D1E38D05500CF456D /* ItemListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
+		51EEBA0F1E38EB3800CF456D /* ItemListDataProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				51EEB9FA1E38BB4900CF456D /* Info.plist */,
 				51EEBA031E38BBB700CF456D /* ItemTest.swift */,
 				51EEBA081E38C58800CF456D /* ItemListViewControllerTests.swift */,
+				51EEBA0F1E38EB3800CF456D /* ItemListDataProviderTest.swift */,
 			);
 			path = CatalogueTests;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EEBA041E38BBB700CF456D /* ItemTest.swift in Sources */,
+				51EEBA101E38EB3800CF456D /* ItemListDataProviderTest.swift in Sources */,
 				51EEBA091E38C58800CF456D /* ItemListViewControllerTests.swift in Sources */,
 				51EEB9F91E38BB4900CF456D /* CatalogueTests.swift in Sources */,
 			);
