@@ -12,10 +12,12 @@ class ItemListViewController: UIViewController {
     var tableView: UITableView?
 
     @IBOutlet weak var itemTableView: UITableView!
-    @IBOutlet weak var dataProvider: ItemListDataProvider!
+    @IBOutlet weak var dataProvider: (UITableViewDataSource & UITableViewDelegate)!
+
     
     override func viewDidLoad() {
         itemTableView.dataSource = dataProvider
+        itemTableView.delegate = dataProvider
     }
 }
 
