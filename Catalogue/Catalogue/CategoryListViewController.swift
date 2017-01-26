@@ -11,18 +11,23 @@ import UIKit
 class CategoryListViewController: UIViewController {
     
     @IBOutlet weak var categoryTableView: UITableView!
+    
     @IBOutlet var categoryDataProvider: (UITableViewDataSource & UITableViewDelegate)!
     
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
+        
         categoryTableView.dataSource = categoryDataProvider
+        
         categoryTableView.delegate = categoryDataProvider
         
         
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
     }
 

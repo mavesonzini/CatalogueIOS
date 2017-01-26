@@ -23,6 +23,10 @@
 		51EEBA161E391E6700CF456D /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA151E391E6700CF456D /* CategoryListViewController.swift */; };
 		51EEBA181E391E8900CF456D /* CategoryListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA171E391E8900CF456D /* CategoryListViewControllerTest.swift */; };
 		51EEBA1A1E3A136E00CF456D /* CategoryListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA191E3A136E00CF456D /* CategoryListDataProvider.swift */; };
+		51EEBA1C1E3A2CD500CF456D /* CategoryListDataProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA1B1E3A2CD500CF456D /* CategoryListDataProviderTest.swift */; };
+		51EEBA201E3A3A0500CF456D /* CategoryManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA1F1E3A3A0500CF456D /* CategoryManagerTests.swift */; };
+		51EEBA221E3A3A8000CF456D /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA211E3A3A8000CF456D /* CategoryManager.swift */; };
+		51EEBA241E3A407200CF456D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA231E3A407200CF456D /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		51EEBA151E391E6700CF456D /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		51EEBA171E391E8900CF456D /* CategoryListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewControllerTest.swift; sourceTree = "<group>"; };
 		51EEBA191E3A136E00CF456D /* CategoryListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListDataProvider.swift; sourceTree = "<group>"; };
+		51EEBA1B1E3A2CD500CF456D /* CategoryListDataProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListDataProviderTest.swift; sourceTree = "<group>"; };
+		51EEBA1F1E3A3A0500CF456D /* CategoryManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManagerTests.swift; sourceTree = "<group>"; };
+		51EEBA211E3A3A8000CF456D /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
+		51EEBA231E3A407200CF456D /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +119,9 @@
 		51EEB9F71E38BB4900CF456D /* CatalogueTests */ = {
 			isa = PBXGroup;
 			children = (
-				51EEB9F81E38BB4900CF456D /* CatalogueTests.swift */,
+				51EEBA1E1E3A2D0400CF456D /* ModelTests */,
 				51EEB9FA1E38BB4900CF456D /* Info.plist */,
-				51EEBA031E38BBB700CF456D /* ItemTest.swift */,
-				51EEBA081E38C58800CF456D /* ItemListViewControllerTests.swift */,
-				51EEBA0F1E38EB3800CF456D /* ItemListDataProviderTest.swift */,
-				51EEBA111E390F4500CF456D /* CategoryTest.swift */,
-				51EEBA171E391E8900CF456D /* CategoryListViewControllerTest.swift */,
+				51EEBA1D1E3A2CDD00CF456D /* ControllerTests */,
 			);
 			path = CatalogueTests;
 			sourceTree = "<group>";
@@ -127,6 +131,7 @@
 			children = (
 				51EEBA051E38BC7A00CF456D /* Item.swift */,
 				51EEBA131E39114400CF456D /* Category.swift */,
+				51EEBA211E3A3A8000CF456D /* CategoryManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -138,8 +143,31 @@
 				51EEBA0A1E38C60D00CF456D /* ItemListViewController.swift */,
 				51EEBA151E391E6700CF456D /* CategoryListViewController.swift */,
 				51EEBA191E3A136E00CF456D /* CategoryListDataProvider.swift */,
+				51EEBA231E3A407200CF456D /* CategoryCell.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		51EEBA1D1E3A2CDD00CF456D /* ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				51EEBA0F1E38EB3800CF456D /* ItemListDataProviderTest.swift */,
+				51EEBA081E38C58800CF456D /* ItemListViewControllerTests.swift */,
+				51EEBA171E391E8900CF456D /* CategoryListViewControllerTest.swift */,
+				51EEBA1B1E3A2CD500CF456D /* CategoryListDataProviderTest.swift */,
+			);
+			name = ControllerTests;
+			sourceTree = "<group>";
+		};
+		51EEBA1E1E3A2D0400CF456D /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				51EEBA1F1E3A3A0500CF456D /* CategoryManagerTests.swift */,
+				51EEBA111E390F4500CF456D /* CategoryTest.swift */,
+				51EEB9F81E38BB4900CF456D /* CatalogueTests.swift */,
+				51EEBA031E38BBB700CF456D /* ItemTest.swift */,
+			);
+			name = ModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EEBA0B1E38C60D00CF456D /* ItemListViewController.swift in Sources */,
+				51EEBA241E3A407200CF456D /* CategoryCell.swift in Sources */,
+				51EEBA221E3A3A8000CF456D /* CategoryManager.swift in Sources */,
 				51EEBA1A1E3A136E00CF456D /* CategoryListDataProvider.swift in Sources */,
 				51EEBA0E1E38D05500CF456D /* ItemListDataProvider.swift in Sources */,
 				51EEBA161E391E6700CF456D /* CategoryListViewController.swift in Sources */,
@@ -260,11 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EEBA181E391E8900CF456D /* CategoryListViewControllerTest.swift in Sources */,
+				51EEBA201E3A3A0500CF456D /* CategoryManagerTests.swift in Sources */,
 				51EEBA041E38BBB700CF456D /* ItemTest.swift in Sources */,
 				51EEBA121E390F4500CF456D /* CategoryTest.swift in Sources */,
 				51EEBA101E38EB3800CF456D /* ItemListDataProviderTest.swift in Sources */,
 				51EEBA091E38C58800CF456D /* ItemListViewControllerTests.swift in Sources */,
 				51EEB9F91E38BB4900CF456D /* CatalogueTests.swift in Sources */,
+				51EEBA1C1E3A2CD500CF456D /* CategoryListDataProviderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@ import XCTest
 class CatalogueTests: XCTestCase {
     
     override func setUp() {
+       
         super.setUp()
         
     }

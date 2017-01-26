@@ -9,11 +9,15 @@
 import Foundation
 
 struct Category {
+    
     let title: String
+    
     var itemsArray: [Item]?
     
     init(title: String, itemsArray: [Item]?) {
+    
         self.title = title
+        
         self.itemsArray = itemsArray
     }
 }

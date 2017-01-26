@@ -9,15 +9,22 @@
 import UIKit
 
 class CategoryListDataProvider: NSObject, UITableViewDataSource {
-    @available(iOS 2.0, *)
+    
+    var categories = [Category]()
+    
+    var categoryManager: CategoryManager?
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell")
+        
+        return cell!
     }
 
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        
+        return categories.count
     }
- 
-
+    
 }

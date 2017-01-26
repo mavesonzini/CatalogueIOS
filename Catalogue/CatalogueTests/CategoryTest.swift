@@ -13,6 +13,7 @@ import XCTest
 class CategoryTest: XCTestCase {
     
     override func setUp() {
+        
         super.setUp()
         
     }
@@ -23,6 +24,7 @@ class CategoryTest: XCTestCase {
     }
     
     func testInit_ShouldTakeTitleAndItemsArray() {
+       
         _ = Category(title: "Test Title", itemsArray: nil)
     }
     
