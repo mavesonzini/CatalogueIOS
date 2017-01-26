@@ -1,5 +1,5 @@
 //
-//  ItemListDataProviderTest.swift
+//  Category.swift
 //  Catalogue
 //
 //  Created by María Verónica Sonzini on 25/01/2017.
@@ -7,9 +7,10 @@
 //
 
 import XCTest
+
 @testable import Catalogue
 
-class ItemListDataProviderTest: XCTestCase {
+class CategoryTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -19,6 +20,10 @@ class ItemListDataProviderTest: XCTestCase {
     override func tearDown() {
         
         super.tearDown()
+    }
+    
+    func testInit_ShouldTakeTitleAndItemsArray() {
+        _ = Category(title: "Test Title", itemsArray: nil)
     }
     
 }

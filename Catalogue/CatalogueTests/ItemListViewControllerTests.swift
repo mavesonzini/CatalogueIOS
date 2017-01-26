@@ -14,18 +14,15 @@ class ItemListViewControllerTests: XCTestCase {
     var sut: ItemListViewController!
     
     
-    override func setUp()
-    {
+    override func setUp() {
         super.setUp()
     }
     
-    override func tearDown()
-    {
+    override func tearDown() {
         super.tearDown()
     }
     
-    func test_tableViewIsNotNilAfterViewDidLoad()
-    {
+    func test_tableViewIsNotNilAfterViewDidLoad() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
         
@@ -34,8 +31,7 @@ class ItemListViewControllerTests: XCTestCase {
         
     }
     
-    func testViewDidLoad_ShouldSetTableViewDataSource()
-    {
+    func testViewDidLoad_ShouldSetTableViewDataSource() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
         
@@ -45,8 +41,7 @@ class ItemListViewControllerTests: XCTestCase {
         XCTAssertTrue(sut.itemTableView.dataSource is ItemListDataProvider)
     }
     
-    func testViewDidLoad_ShouldSetTableViewDelegate()
-    {
+    func testViewDidLoad_ShouldSetTableViewDelegate() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
         
@@ -56,8 +51,7 @@ class ItemListViewControllerTests: XCTestCase {
         XCTAssertTrue(sut.itemTableView.delegate is ItemListDataProvider)
     }
     
-    func testViewDidLoad_ShouldSetDelegateAndDataSourceToTheSameObject()
-    {
+    func testViewDidLoad_ShouldSetDelegateAndDataSourceToTheSameObject() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
         

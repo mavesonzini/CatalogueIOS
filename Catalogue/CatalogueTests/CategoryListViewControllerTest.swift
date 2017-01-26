@@ -1,5 +1,5 @@
 //
-//  ItemListDataProviderTest.swift
+//  CategoryListViewControllerTest.swift
 //  Catalogue
 //
 //  Created by María Verónica Sonzini on 25/01/2017.
@@ -7,9 +7,8 @@
 //
 
 import XCTest
-@testable import Catalogue
 
-class ItemListDataProviderTest: XCTestCase {
+class CategoryListViewControllerTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -17,8 +16,12 @@ class ItemListDataProviderTest: XCTestCase {
     }
     
     override func tearDown() {
-        
+       
         super.tearDown()
     }
     
+    
+    func test_tableViewIsNotNilAfterViewDidLoad() {
+        
+    }
 }
