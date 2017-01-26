@@ -9,8 +9,7 @@
 import UIKit
 
 class ItemListDataProvider: NSObject, UITableViewDataSource {
-    
-    
+        
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }

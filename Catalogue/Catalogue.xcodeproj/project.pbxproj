@@ -20,8 +20,9 @@
 		51EEBA101E38EB3800CF456D /* ItemListDataProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA0F1E38EB3800CF456D /* ItemListDataProviderTest.swift */; };
 		51EEBA121E390F4500CF456D /* CategoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA111E390F4500CF456D /* CategoryTest.swift */; };
 		51EEBA141E39114400CF456D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA131E39114400CF456D /* Category.swift */; };
-		51EEBA161E391E6700CF456D /* CategoryListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA151E391E6700CF456D /* CategoryListViewControllerTableViewController.swift */; };
+		51EEBA161E391E6700CF456D /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA151E391E6700CF456D /* CategoryListViewController.swift */; };
 		51EEBA181E391E8900CF456D /* CategoryListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA171E391E8900CF456D /* CategoryListViewControllerTest.swift */; };
+		51EEBA1A1E3A136E00CF456D /* CategoryListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EEBA191E3A136E00CF456D /* CategoryListDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,9 @@
 		51EEBA0F1E38EB3800CF456D /* ItemListDataProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTest.swift; sourceTree = "<group>"; };
 		51EEBA111E390F4500CF456D /* CategoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTest.swift; sourceTree = "<group>"; };
 		51EEBA131E39114400CF456D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		51EEBA151E391E6700CF456D /* CategoryListViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		51EEBA151E391E6700CF456D /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		51EEBA171E391E8900CF456D /* CategoryListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewControllerTest.swift; sourceTree = "<group>"; };
+		51EEBA191E3A136E00CF456D /* CategoryListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +136,8 @@
 			children = (
 				51EEBA0D1E38D05500CF456D /* ItemListDataProvider.swift */,
 				51EEBA0A1E38C60D00CF456D /* ItemListViewController.swift */,
-				51EEBA151E391E6700CF456D /* CategoryListViewControllerTableViewController.swift */,
+				51EEBA151E391E6700CF456D /* CategoryListViewController.swift */,
+				51EEBA191E3A136E00CF456D /* CategoryListDataProvider.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -243,8 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EEBA0B1E38C60D00CF456D /* ItemListViewController.swift in Sources */,
+				51EEBA1A1E3A136E00CF456D /* CategoryListDataProvider.swift in Sources */,
 				51EEBA0E1E38D05500CF456D /* ItemListDataProvider.swift in Sources */,
-				51EEBA161E391E6700CF456D /* CategoryListViewControllerTableViewController.swift in Sources */,
+				51EEBA161E391E6700CF456D /* CategoryListViewController.swift in Sources */,
 				51EEBA061E38BC7A00CF456D /* Item.swift in Sources */,
 				51EEB9E41E38BB4900CF456D /* AppDelegate.swift in Sources */,
 				51EEBA141E39114400CF456D /* Category.swift in Sources */,

@@ -10,6 +10,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Category List View Controller-->
+        <scene sceneID="jrg-F3-8zf">
+            <objects>
+                <viewController storyboardIdentifier="CategoryListViewController" id="uF0-eM-PVp" customClass="CategoryListViewController" customModule="Catalogue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0es-S2-vas"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Og-JN-Wte"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qPq-OB-Uhw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R02-Lb-B6d">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R02-Lb-B6d" firstAttribute="leading" secondItem="qPq-OB-Uhw" secondAttribute="leadingMargin" id="7V9-l9-Kc5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R02-Lb-B6d" secondAttribute="trailing" id="9t9-8M-jeP"/>
+                            <constraint firstItem="3Og-JN-Wte" firstAttribute="top" secondItem="R02-Lb-B6d" secondAttribute="bottom" id="HtO-YF-Jjf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R02-Lb-B6d" secondAttribute="trailing" id="New-k8-mqN"/>
+                            <constraint firstItem="3Og-JN-Wte" firstAttribute="top" secondItem="R02-Lb-B6d" secondAttribute="bottom" id="P0X-HJ-See"/>
+                            <constraint firstItem="R02-Lb-B6d" firstAttribute="top" secondItem="0es-S2-vas" secondAttribute="bottom" id="srz-ce-WL4"/>
+                            <constraint firstItem="R02-Lb-B6d" firstAttribute="top" secondItem="0es-S2-vas" secondAttribute="bottom" id="wXo-39-UyG"/>
+                            <constraint firstItem="R02-Lb-B6d" firstAttribute="leading" secondItem="qPq-OB-Uhw" secondAttribute="leadingMargin" id="waF-hk-LjJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryDataProvider" destination="NhN-l5-GTh" id="4wZ-If-5Uo"/>
+                        <outlet property="categoryTableView" destination="R02-Lb-B6d" id="k6O-c7-zm7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrO-W7-KHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="NhN-l5-GTh" customClass="CategoryListDataProvider" customModule="Catalogue" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-742" y="53"/>
+        </scene>
         <!--Item List View Controller-->
         <scene sceneID="cID-fc-M9Y">
             <objects>
