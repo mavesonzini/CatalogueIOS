@@ -9,6 +9,7 @@
 import Foundation
 
 struct Item {
+    
     let title: String
     
     let itemCategory: String?
@@ -18,6 +19,7 @@ struct Item {
     let itemQuantity: int_fast8_t
     
     init(title: String, itemCategory: String?, itemPrice: double_t, itemQuantity: int_fast8_t) {
+        
         self.title = title
     
         self.itemCategory = itemCategory

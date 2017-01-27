@@ -16,22 +16,7 @@ class CategoryListDataProviderTest: XCTestCase {
     override func setUp() {
         
         super.setUp()
-        
-        let sut = CategoryListDataProvider()
-        
-        sut.categoryManager = CategoryManager()
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        controller = storyboard.instantiateViewController(withIdentifier: "CategoryListViewController") as!
-            
-        CategoryListViewController
-        
-        _ = controller.view
-        
-        let tableView = controller.categoryTableView
-        
-        tableView?.dataSource = sut
+     
     }
     
     func testNumberOfSections_IsOne() {
@@ -47,35 +32,20 @@ class CategoryListDataProviderTest: XCTestCase {
         XCTAssertEqual(numberOfSections, 1)
     }
     
-}
-
-extension CategoryListDataProviderTest {
-    
-    class MockCategoryTableView : UITableView {
-        
-        var cellGotDequeued = false
-        
-        override func dequeueReusableCell(withIdentifier identifier: String) -> UITableViewCell? {
-            
-            cellGotDequeued = true
-            
-            return super.dequeueReusableCell(withIdentifier: identifier)
-        }
-        
-    }
-    
-    func testCellForRow_DequeuesCell() {
-        
-        let mockTableView = MockCategoryTableView()
+    func testNumberOfRows_IsTwo() {
         
         let sut = CategoryListDataProvider()
         
-        mockTableView.dataSource = sut
+        let tableView = UITableView()
         
-        mockTableView.register(CategoryCell.self, forCellReuseIdentifier: "CategoryCell")
+        tableView.dataSource = sut
         
-        XCTAssertTrue(mockTableView.cellGotDequeued)
+        let numberOfRows = tableView.numberOfRows(inSection: 0)
+        
+        XCTAssertEqual(numberOfRows, 2)
+        
     }
+    
 }
 
 
