@@ -22,4 +22,19 @@ class ItemListDataProviderTest: XCTestCase {
         super.tearDown()
     }
     
+    func testNumberOfRows_IsTwo() {
+        
+        let sut = ItemListDataProvider()
+        
+        let tableView = UITableView()
+        
+        tableView.dataSource = sut
+        
+        let numberOfRows = tableView.numberOfRows(inSection: 0)
+        
+        XCTAssertEqual(numberOfRows, 2)
+        
+    }
+    
+    
 }

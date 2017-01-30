@@ -10,23 +10,39 @@ import Foundation
 
 struct Item {
     
-    let title: String
+    var name: String = ""
+    var produtId: String = ""
+    var category: String = ""
+    var price: Int = 0
+    var oldPrice: Int?
+    var stock: Int = 0
     
-    let itemCategory: String?
-    
-    let itemPrice: double_t
-    
-    let itemQuantity: int_fast8_t
-    
-    init(title: String, itemCategory: String?, itemPrice: double_t, itemQuantity: int_fast8_t) {
+    init(itemDictionary: [String: AnyObject]) {
+        if let name = itemDictionary["name"] as? String {
+            self.name = name
+        }
         
-        self.title = title
-    
-        self.itemCategory = itemCategory
+        if let produtId = itemDictionary["productId"] as? String {
+            self.produtId = produtId
+        }
         
-        self.itemPrice = itemPrice
+        if let category = itemDictionary["category"] as? String {
+            self.category = category
+        }
         
-        self.itemQuantity = itemQuantity
+        if let price = itemDictionary["price"] as? Int {
+            self.price = price
+        }
+        
+        if let oldPrice = itemDictionary["oldPrice"] as? Int {
+            self.oldPrice = oldPrice
+            
+        }
+        
+        if let stock = itemDictionary["stock"] as? Int {
+            self.stock = stock
+            
+        }
     }
 }
 
